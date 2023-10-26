@@ -56,6 +56,8 @@ jobs:
     - name: run unit test 
       run: mvn test
 
+    - name: debug artifacts
+      run: ls target/
 
 
     - name: build docker image
