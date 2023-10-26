@@ -69,8 +69,6 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Build and push
-      uses: docker/build-push-action@v5
-      with:
-          push: true
-          tags: sandeepverticurl/assignment
+          
+    -  name: Build and push
+       run: docker push sandeepverticurl/assignment
